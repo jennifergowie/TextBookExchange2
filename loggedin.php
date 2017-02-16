@@ -7,7 +7,8 @@
     <title>Congrats</title>
 </head>
 <body>
-    <form method="get" action="logout.php"
-    <p>Congratulations you have successfully logged in</p>
-    <button type="button">Logout</button>
+    <form method="get" action="logout.php">
+        <p>Congratulations you have successfully logged in</p>
+        <button type="button">Logout</button>
+    </form>
 </body>
