@@ -2,15 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
 <form action="action_page.php" method="post">
-    <div>
+    <div class="container">
+        <h2>Welcome to TextBookExchange!</h2>
         <input type="text" name="username" placeholder="Username" required><br>
         <input type="password" name="password" placeholder="Password" required><br>
-        <input type="submit" value="Login">
+        <button type="submit">Login</button>
+        <input type="checkbox" checked="checked"> Keep me logged in
+    </div>
+
+    <div class="container">
+        <button type="button" class="cancelbutton">Cancel</button><br>
+        <span>Have you forgotten your <a href="#">password?</a></span>
     </div>
 </form>
 
