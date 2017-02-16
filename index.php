@@ -7,11 +7,11 @@
 </head>
 <body>
 
-<form action="action_page.php" method="post">
+<form action="validate.php" method="post">
     <div class="container">
         <h2>Welcome to TextBookExchange!</h2>
-        <input type="text" name="username" placeholder="Username" required><br>
-        <input type="password" name="password" placeholder="Password" required><br>
+        <input type="text" name="username" placeholder="Username" required><span style="color:red">*</span><br>
+        <input type="password" name="password" placeholder="Password" required><span style="color:red">*</span><br>
         <button type="submit">Login</button>
         <input type="checkbox" checked="checked"> Keep me logged in
     </div>

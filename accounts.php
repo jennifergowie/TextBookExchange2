@@ -1,0 +1,8 @@
+<?php
+$accounts = array(
+    "Matthew"=>"Bolton",
+    "Alistair"=>"White",
+    "Jennifer"=>"Gowie",
+    "Ike"=>"Adiele"
+);
+?>
