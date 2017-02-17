@@ -12,10 +12,10 @@
 
     function login($username, $password) {
         global $accounts;
-        if(isset($accounts[$username])) {
-            return($password==$accounts[$username]);
-        } else {
+        if(!isset($accounts[$username])) {
             return(false);
+        } else {
+            return($password==$acounts[$username]);
         }
     }
 
