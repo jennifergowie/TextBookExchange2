@@ -1,8 +1,9 @@
 <?php
-$accounts = array(
-    "Matthew"=>"Bolton",
-    "Alistair"=>"White",
-    "Jennifer"=>"Gowie",
-    "Ike"=>"Adiele"
-);
+    $accounts = array(
+        "Matthew"=>"Bolton",
+        "Alistair"=>"White",
+        "Jennifer"=>"Gowie",
+        "Ike"=>"Adiele",
+        "Kit"=>"Hui"
+    );
 ?>

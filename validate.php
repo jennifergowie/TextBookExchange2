@@ -1,11 +1,34 @@
 <?php
-if (isset($_POST["username"]) || isset($_POST["password"])) {    //Checks if username and password have been passed from login.php
-    $username = $_POST["username"];                             //Sets $username variable to the username passed from login.php
-    $password = $_POST["password"];                             //Sets $password variable to the password passed from login.php
-    header("location: loggedin.php");                           //Sends the user to the "logged in" page. ***TEMPORARY LINK***
-    exit();
-} else {
-    header("location: login.php");                              //Else it kicks the user back to login.php
-    exit();
-}
+    session_start();
+
+    if(empty($_POST) or empty($_POST["username"]) or empty($_POST["password"])) {
+        session_unset();
+        session_destroy();
+        header("location: login.php");
+        exit();
+    }
+
+    require_once "accounts.php";
+
+    function login($username, $password) {
+        global $accounts;
+        if(isset($accounts[$username])) {
+            return($password==$accounts[$username]);
+        } else {
+            return(false);
+        }
+    }
+
+    $username=$_POST["username"];
+    $password=$_POST["password"];
+
+    if(login($username,$password)) {
+        $_SESSION["username"]=$username;
+        header("location: home.php");
+        exit();
+    }
+
+    session_unset();
+    session_destroy();
+    header("location: login.php");
 ?>
