@@ -1,28 +1,20 @@
-<?php
-
-// NB: add comments throughout!
-
-session_start();
-session_unset();
-session_destroy();
-//header("location: login.php"); // display message below when logout button is clicked instead
-?>
-
 <!DOCTYPE html>
 
 <!-- NB: add comments, sort formatting! -->
 
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
-        <title>Logout</title>
+        <title>Password reset message</title>
         <link rel="stylesheet" type="text/css" href="assets/style.css">
     </head>
-    <body>
 
+    <body>
         <div class="container">
-            <h4>Thanks for visiting Textbook Exchange! Goodbye!!</h4>
-            <span>Click here to <a href="login.php">login</a> again.</span>
+            <h3>Your password has been reset.</h3>
+            <h4>Visit your email address and follow instructions to create a new password.</h4>
+            <h4>Alternatively, click here to <a href="login.php">relogin</a>.</h4>
         </div>
     </body>
 
