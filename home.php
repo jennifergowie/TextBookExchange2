@@ -24,7 +24,7 @@ $username=$_SESSION["user"];
         <div class="container">
             <form method="get" action="logout.php">
                 <h3>Congratulations!</h3>
-                <h4>You have successfully logged in to the Texbook Exchange Website!</h4>
+                <h4>You have successfully logged in to the Textbook Exchange Website!</h4>
                 <p>We hope you like our site and that you do some business with us.</p>
                 <button type="submit">Logout</button>
             </form>
