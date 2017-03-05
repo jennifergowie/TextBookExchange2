@@ -32,3 +32,14 @@ input[type=text], input[type=password], input[type=email], input[type=tel] {
 h2 {
     font-family: sans-serif;
 }
+
+.navbutton{
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.navbar{
+    background-color: darkgrey;
+}
