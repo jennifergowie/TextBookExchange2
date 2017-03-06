@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>List your Textbook!</title>
-    <link rel="stylesheet" href="assets/unsemantic-grid-responsive-tablet.css">
+    <title>Create a listing</title>
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/unsemantic-grid-responsive-tablet.css"
 </head>
 <body>
 <header>
@@ -21,17 +21,23 @@
     </nav>
 </header>
 
-<main>
-    <h3>Use this page to create your book listing!</h3>
-    <form action="#" method="post">
-        <div>
-            <input type="text" name="title" placeholder="Book Title" required><br>
-            <input type="text" name="author" placeholder="Author" required><br>
-            <input type="text" name="ISBN" placeholder="ISBN Number"><br>
-            <input type="text" name="price" placeholder="Requested Price" required><br>
-            <button type="submit">Create Listing</button>
-        </div>
-    </form>
+<main class="grid-container">
+    <section class="grid-66">
+        <h3>Use this page to create your book listing!</h3>
+        <form action="#" method="post">
+            <div>
+                <input type="text" name="title" placeholder="Book Title" required><br>
+                <input type="text" name="author" placeholder="Author" required><br>
+                <input type="text" name="ISBN" placeholder="ISBN Number"><br>
+                <input type="text" name="price" placeholder="Requested Price" required><br>
+                <button type="submit">Create Listing</button>
+            </div>
+        </form>
+    </section>
 </main>
+
+<footer>
+
+</footer>
 </body>
 </html>
