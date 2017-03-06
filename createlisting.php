@@ -21,8 +21,8 @@
     </nav>
 </header>
 
-<main>
-    <section>
+<main class="grid-container">
+    <section class="grid-66">
         <h3>Use this page to create your book listing!</h3>
         <form action="#" method="post">
             <div>
@@ -33,6 +33,9 @@
                 <button type="submit">Create Listing</button>
             </div>
         </form>
+    </section>
+    <section class="grid-33">
+        <!-- Section is empty to allow white-space to the side of the form -->
     </section>
 </main>
 
