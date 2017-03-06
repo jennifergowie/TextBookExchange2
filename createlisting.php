@@ -21,7 +21,7 @@
     </nav>
 </header>
 
-<main class="grid-container">
+<main class="grid-container inputform">
     <section class="grid-66">
         <h3>Use this page to create your book listing!</h3>
         <form action="#" method="post">
