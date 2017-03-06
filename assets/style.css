@@ -1,5 +1,11 @@
 /* NB: add comments throughout! */
 
+body {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 button {
     background-color: darkgreen;
     color: white;
@@ -35,6 +41,7 @@ h2 {
 
 .inputform {
     float: left;
+    max-width: 960px;
 }
 
 /* Navbar formatting start */
