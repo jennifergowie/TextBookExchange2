@@ -5,7 +5,7 @@
     <title>Create a listing</title>
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="assets/unsemantic-grid-responsive-tablet.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rakkas">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rakkas|Quicksand">
 </head>
 <body>
 <header>
@@ -24,14 +24,11 @@
 
 <main class="grid-container">
     <section class="grid-66">
-        <h3>Use this page to create your book listing!</h3>
+        <h3>Input your textbook's 10 or 13 digit ISBN number here to look up your book</h3>
         <form action="#" method="post">
             <div>
-                <input type="text" name="title" placeholder="Book Title" required><br>
-                <input type="text" name="author" placeholder="Author" required><br>
-                <input type="text" name="ISBN" placeholder="ISBN Number"><br>
-                <input type="text" name="price" placeholder="Requested Price" required><br>
-                <button type="submit">Create Listing</button>
+                <input type="text" name="ISBN" placeholder="ISBN Number" required><br>
+                <button type="submit">Find Book</button>
             </div>
         </form>
     </section>

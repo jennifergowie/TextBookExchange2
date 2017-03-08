@@ -19,6 +19,7 @@ $username=$_SESSION["user"];
         <meta charset="UTF-8">
         <title>Welcome!</title>
         <link rel="stylesheet" type="text/css" href="assets/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
     </head>
     <body>
         <div class="container">
