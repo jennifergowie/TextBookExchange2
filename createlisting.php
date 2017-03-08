@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>Create a listing</title>
     <link rel="stylesheet" href="assets/style.css">
-    <link rel="stylesheet" href="assets/unsemantic-grid-responsive-tablet.css"
+    <link rel="stylesheet" href="assets/unsemantic-grid-responsive-tablet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
 </head>
 <body>
 <header>
