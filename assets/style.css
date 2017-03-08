@@ -35,6 +35,10 @@ input[type=text], input[type=password], input[type=email], input[type=tel] {
     margin-left: auto;
 }
 
+h1 {
+    font-family: Pacifico, sans-serif;
+}
+
 h2 {
     font-family: sans-serif;
 }
