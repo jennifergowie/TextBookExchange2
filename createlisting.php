@@ -22,20 +22,39 @@
     </nav>
 </header>
 
-<main class="grid-container">
-    <section class="grid-66">
-        <h3>Input your textbook's 10 or 13 digit ISBN number here to look up your book</h3>
-        <form action="#" method="post">
-            <div>
-                <input type="text" name="ISBN" placeholder="ISBN Number" required><br>
-                <button type="submit">Find Book</button>
-            </div>
-        </form>
-    </section>
-</main>
+<?php
+
+//If no form input given, create the HTML form. Otherwise run the SQL query.
+if ($_SERVER['REQUEST_METHOD']==="GET"){
+    include('listingform.php');
+} elseif ($_SERVER['REQUEST_METHOD']==="POST"){
+    //Create variables from form
+    $title = $_POST['title'];
+    $author = $_POST['author'];
+    $isbn =  $_POST['isbn'];
+    $price = $_POST['price'];
+
+    //Establish DB connection
+    include("dbConnect.php");
+
+    //Create SQL query as a string
+    $sql = "INSERT INTO textbooks (title, author, isbn, price) VALUES ('$title', '$author', '$isbn', '$price')";
+
+    //Execute query
+    if ($link->query($sql)===TRUE) {
+        echo "New textbook listed successfully";
+    } else {
+        echo "Error: " . $sql . "<br>" . $link->error;
+    }
+    //Close connection
+    $link->close();
+}
+?>
 
 <footer>
-
+    <div class="container">
+        <p>&copy; 2017 textbookexchange.com</p>
+    </div>
 </footer>
 </body>
 </html>
