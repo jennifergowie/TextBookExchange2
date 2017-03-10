@@ -13,8 +13,8 @@
         <h3>Input your textbook information below to create a listing</h3>
         <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
             <div>
-                <input type="text" name="isbn13" placeholder="13 Digit ISBN" required><br>
-                <input type="text" name="isbn10" placeholder="10 Digit ISBN" required><br>
+                <input type="number" name="isbn13" placeholder="13 Digit ISBN" maxlength="13" required><br>
+                <input type="number" name="isbn10" placeholder="10 Digit ISBN" maxlength="10" required><br>
                 <input type="text" name="title" placeholder="Title"><br>
                 <input type="text" name="author" placeholder="Author"><br>
                 <input type="text" name="language" placeholder="Language"><br>
