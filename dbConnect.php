@@ -2,7 +2,7 @@
 
 /*Connection string information*/
 $connectstr_dbhost = '';
-$connectstr_dbname = 'textbookexchange';
+$connectstr_dbname = 'textbookexchanges';
 $connectstr_dbusername = '';
 $connectstr_dbpassword = '';
 
