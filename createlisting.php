@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD']==="GET"){
     include("dbConnect.php");
 
     //Create SQL query as a string
-    $sql = "INSERT INTO textbooks ('ISBN-13', 'ISBN-10', 'Title', 'Language', 'Publisher', 'PublicationDate', 'Author', 'Price') VALUES ('$isbn13', '$isbn10', '$title', '$language', '$pubsliher', '$publicationDate', '$price')";
+    $sql = "INSERT INTO books ('ISBN-13', 'ISBN-10', 'Title', 'Language', 'Publisher', 'PublicationDate', 'Author', 'Price') VALUES ('$isbn13', '$isbn10', '$title', '$language', '$pubsliher', '$publicationDate', '$price')";
 
     //Execute query
     if ($link->query($sql)===TRUE) {
