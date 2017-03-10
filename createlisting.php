@@ -29,16 +29,20 @@ if ($_SERVER['REQUEST_METHOD']==="GET"){
     include('listingform.php');
 } elseif ($_SERVER['REQUEST_METHOD']==="POST"){
     //Create variables from form
+    $isbn13 = $_POST['isbn13'];
+    $isbn10 = $_POST['isbn10'];
     $title = $_POST['title'];
     $author = $_POST['author'];
-    $isbn =  $_POST['isbn'];
+    $language = $_POST['language'];
+    $publisher = $_POST['publisher'];
+    $publicationDate = $_POST['publicationDate'];
     $price = $_POST['price'];
 
     //Establish DB connection
     include("dbConnect.php");
 
     //Create SQL query as a string
-    $sql = "INSERT INTO textbooks (title, author, isbn, price) VALUES ('$title', '$author', '$isbn', '$price')";
+    $sql = "INSERT INTO textbooks ('ISBN-13', 'ISBN-10', 'Title', 'Language', 'Publisher', 'PublicationDate', 'Author', 'Price') VALUES ('$isbn13', '$isbn10', '$title', '$language', '$pubsliher', '$publicationDate', '$price')";
 
     //Execute query
     if ($link->query($sql)===TRUE) {
