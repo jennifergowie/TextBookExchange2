@@ -42,7 +42,8 @@ if ($_SERVER['REQUEST_METHOD']==="GET"){
     include("dbConnect.php");
 
     //Create SQL query as a string
-    $sql = "INSERT INTO books ('ISBN-13', 'ISBN-10', 'Title', 'Language', 'Publisher', 'PublicationDate', 'Author', 'Price') VALUES ('$isbn13', '$isbn10', '$title', '$language', '$publisher', '$publicationDate', '$author', '$price')";
+    /*!!!!IMPORTANT NOTE!!!! Column titles should be enclosed in ``(grave accent located to the left of 1 key) while the values should be enclosed in ''(apostrophe) */
+    $sql = "INSERT INTO books (`ISBN-13`, `ISBN-10`, `Title`, `Language`, `Publisher`, `PublicationDate`, `Author`, `Price`) VALUES ('$isbn13', '$isbn10', '$title', '$language', '$publisher', '$publicationDate', '$author', '$price')";
 
     //Execute query
     if ($link->query($sql)===TRUE) {
