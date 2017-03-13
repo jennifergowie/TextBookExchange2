@@ -17,16 +17,17 @@ $username=$_SESSION["user"];
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Welcome!</title>
+        <title>Welcome</title>
         <link rel="stylesheet" type="text/css" href="assets/style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+        <center><img src="assets/logo.png" alt="Logo" style="width:100px;height:100px;"></center>
     </head>
     <body>
         <div class="container">
             <form method="get" action="logout.php">
-                <h3>Congratulations!</h3>
-                <h4>You have successfully logged in to the Textbook Exchange Website!</h4>
-                <p>We hope you like our site and that you do some business with us.</p>
+                <h3>Congratulations</h3>
+                <h4>You have successfully logged in to the Textbook Exchange Website</h4>
+                <p>We hope you like our site and that you do some business with us</p>
                 <button type="submit">Logout</button>
             </form>
         </div>
@@ -34,7 +35,8 @@ $username=$_SESSION["user"];
 
     <footer>
         <div class="container">
-            <p>&copy; 2017 textbookexchange.com</p>
+            <br></br>
+            <center><p>&copy; 2017 textbookexchange.com</p></center>
         </div>
     </footer>
 

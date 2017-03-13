@@ -6,11 +6,12 @@
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="assets/unsemantic-grid-responsive-tablet.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rakkas|Quicksand">
+
 </head>
 <body>
 <main class="grid-container">
     <section class="grid-66">
-        <h3>Input your textbook information below to create a listing</h3>
+        <h4>Input your textbook information below to create a listing</h4>
         <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
             <div>
                 <input type="text" name="isbn13" placeholder="13 Digit ISBN" required><br>
@@ -39,4 +40,10 @@
     </section>
 </main>
 </body>
+<footer>
+    <div class="container">
+        <br></br>
+        <center><p>&copy; 2017 textbookexchange.com</p></center>
+    </div>
+</footer>
 </html>

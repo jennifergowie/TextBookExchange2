@@ -20,23 +20,26 @@ if(isset($_SESSION["username"])) {
     <title>Login Page</title>
     <link rel="stylesheet" type="text/css" href="assets/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+
 </head>
     <body>
 
         <form action="validate.php" method="post">
             <div class="container">
-                <h2>Welcome to TextBookExchange!!!</h2>
+                <center><img src="assets/logo.png" alt="Logo" style="width:100px;height:100px;"></center>
+                <h2>Welcome to Textbook Exchange</h2>
                 <input type="text" name="username" placeholder="Username" required><br>
                 <input type="password" name="password" placeholder="Password" required><br>
                 <button type="submit">Login</button>
-                <input type="checkbox" checked="checked">Keep me logged in
+                <input type="checkbox" checked="checked">Keep me logged in<br/>
             </div>
 
             <div class="container">
-                <button type="button" class="cancelbutton">Cancel</button><br>
-                <span>Click here if you've forgotten your <a href="forgotpasswd.php">password</a></span>
+                <!-- <button type="button" class="cancelbutton">Cancel</button><br> -->
+                <br></br>
+                <span>Click here if you have forgotten your <a href="forgotpasswd.php">password</a></span>
                 <br><br>
-                <span>Don't have an account? Click <a href="register.php">here</a> to register</span>
+                <span>Do not have an account? Click <a href="register.php">here</a> to register</span>
             </div>
         </form>
 
@@ -44,7 +47,8 @@ if(isset($_SESSION["username"])) {
 
     <footer>
         <div class="container">
-            <p>&copy; 2017 textbookexchange.com</p>
+            <br>
+            <center><p>&copy; 2017 textbookexchange.com</p></center>
         </div>
     </footer>
 

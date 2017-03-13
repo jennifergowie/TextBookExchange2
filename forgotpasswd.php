@@ -9,6 +9,7 @@
         <title>Password reset</title>
         <link rel="stylesheet" type="text/css" href="assets/style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+        <center><img src="assets/logo.png" alt="Logo" style="width:100px;height:100px;"></center>
     </head>
 
     <body>
@@ -27,7 +28,8 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2017 textbookexchange.com</p>
+            <br>
+           <center><p>&copy; 2017 textbookexchange.com</p></center>
         </div>
     </footer>
 

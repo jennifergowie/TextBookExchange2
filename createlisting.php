@@ -9,7 +9,9 @@
 </head>
 <body>
 <header>
-    <h1>Textbook Exchange Listings</h1>
+    <center><img src="assets/logo.png" alt="Logo" style="width:100px;height:100px;"></center>
+    <h2>Textbook Exchange Listings</h2>
+
     <nav>
         <ul>
             <li><a href="#">Home</a></li>
@@ -59,7 +61,8 @@ if ($_SERVER['REQUEST_METHOD']==="GET"){
 
 <footer>
     <div class="container">
-        <p>&copy; 2017 textbookexchange.com</p>
+        <br>
+        <center><p>&copy; 2017 textbookexchange.com</p></center>
     </div>
 </footer>
 </body>

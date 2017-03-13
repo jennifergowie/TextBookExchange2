@@ -17,18 +17,21 @@ session_destroy();
         <meta charset="UTF-8">
         <title>Logout</title>
         <link rel="stylesheet" type="text/css" href="assets/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rakkas|Quicksand">
+        <center><img src="assets/logo.png" alt="Logo" style="width:100px;height:100px;"></center>
     </head>
     <body>
 
         <div class="container">
-            <h4>Thanks for visiting Textbook Exchange! Goodbye!!</h4>
-            <span>Click here to <a href="login.php">login</a> again.</span>
+            <center><h2>Thanks for visiting Textbook Exchange</h2></center>
+            <center><span>Click here to <a href="login.php">login</a> again</span>
         </div>
     </body>
 
     <footer>
         <div class="container">
-            <p>&copy; 2017 textbookexchange.com</p>
+            <br></br>
+            <center><p>&copy; 2017 textbookexchange.com</p></center>
         </div>
     </footer>
 

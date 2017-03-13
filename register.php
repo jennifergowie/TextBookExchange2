@@ -7,6 +7,8 @@
         <meta charset="UTF-8">
         <title>Login Page</title>
         <link rel="stylesheet" type="text/css" href="assets/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rakkas|Quicksand">
+        <center><img src="assets/logo.png" alt="Logo" style="width:100px;height:100px;"></center>
     </head>
     <body>
 
@@ -28,8 +30,9 @@
     </body>
 
     <footer>
+        <br>
         <div class="container">
-            <p>&copy; 2017 textbookexchange.com</p>
+            <center><p>&copy; 2017 textbookexchange.com</p></center>
         </div>
     </footer>
 

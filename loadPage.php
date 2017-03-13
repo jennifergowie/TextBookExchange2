@@ -3,6 +3,7 @@
         <meta charset="UTF-8">
             <title>View All Books</title>
             <link rel="stylesheet" type="text/css" href="assets/style.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rakkas|Quicksand">
     </head>
     <body>
     <?php
@@ -19,5 +20,11 @@
         ?>
 
     </body>
+    <footer>
+        <div class="container">
+            <br></br>
+            <center><p>&copy; 2017 textbookexchange.com</p></center>
+        </div>
+    </footer>
 </html>
 
