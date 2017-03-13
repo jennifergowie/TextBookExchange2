@@ -8,7 +8,7 @@
     <?php
         include 'dbConnect.php';
             $sql = "SELECT * FROM books";
-            $results =$sql->query($sql);
+            $results =$link->query($sql);
             echo "<table>";
             while ($row = $results->fetch_array()){
                 echo"<tr><td>".$row['Isbn-10']."</td><td>".$row['Isbn-13']."</td><td>".$row['Author']."</td><td>"
