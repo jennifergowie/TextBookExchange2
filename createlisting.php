@@ -15,19 +15,14 @@
             <li><a href="#">Home</a></li>
             <li><a href="#">Browse</a></li>
             <li><a href="#">Search</a></li>
-            <li><a href="createlisting.php">Create Listing</a></li>
+            <li><a href="#">Create Listing</a></li>
             <li><a href="#">Profile</a></li>
-            <li><a href="logout.php">Logout</a></li>
+            <li><a href="#">Logout</a></li>
         </ul>
     </nav>
 </header>
 
 <?php
-
-//If user is not logged in, redirect to login page
-session_start();
-if(!isset($_SESSION["username"])) {
-header("location: login.php");
 
 //If no form input given, create the HTML form. Otherwise run the SQL query.
 if ($_SERVER['REQUEST_METHOD']==="GET"){
@@ -49,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD']==="GET"){
 
     //Create SQL query as a string
     /*!!!!IMPORTANT NOTE!!!! Column titles should be enclosed in ``(grave accent located to the left of 1 key) while the values should be enclosed in ''(apostrophe) */
-    $sql = "INSERT INTO books (`ISBN-13`, `ISBN-10`, `Title`, `Language`, `Publisher`, `PublicationDate`, `Author`, `Price`, `BookCondition`) VALUES ('$isbn13', '$isbn10', '$title', '$language', '$publisher', '$publicationDate', '$author', '$price', '$bookCondition')";
+    $sql = "INSERT INTO books (`ISBN-13`, `ISBN-10`, `Title`, `Language`, `Publisher`, `PublicationDate`, `Author`, `Price`) VALUES ('$isbn13', '$isbn10', '$title', '$language', '$publisher', '$publicationDate', '$author', '$price')";
 
     //Execute query
     if ($link->query($sql)===TRUE) {
