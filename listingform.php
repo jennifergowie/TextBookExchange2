@@ -21,14 +21,12 @@
                 <input type="text" name="publisher" placeholder="Publisher"><br>
                 <input type="text" name="publicationDate" placeholder="Publication Date: YYYY-MM-DD"><br>
                 <input type="text" name="price" placeholder="Requested Price"><br>
-                <select name="bookCondition">
-                    <option value="mint">Mint</option>
-                    <option value="excellent">Excellent</option>
-                    <option value="good">Good</option>
-                    <option value="fair">Fair</option>
-                    <option value="rough">Rough</option>
-                    <option value="damaged">Damaged</option>
-                </select>
+                <input type="radio" name="bookCondition" value="Mint" checked> Mint
+                <input type="radio" name="bookCondition" value="Excellent"> Excellent
+                <input type="radio" name="bookCondition" value="Good"> Good
+                <input type="radio" name="bookCondition" value="Fair"> Fair
+                <input type="radio" name="bookCondition" value="Rough"> Rough
+                <input type="radio" name="bookCondition" value="Damaged"> Damaged
                 <button type="submit">List Textbook</button>
             </div>
         </form>
