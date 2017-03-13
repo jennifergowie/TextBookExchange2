@@ -21,6 +21,14 @@
                 <input type="text" name="publisher" placeholder="Publisher"><br>
                 <input type="text" name="publicationDate" placeholder="Publication Date: YYYY-MM-DD"><br>
                 <input type="text" name="price" placeholder="Requested Price"><br>
+                <select>
+                    <option value="mint">Mint</option>
+                    <option value="excellent">Excellent</option>
+                    <option value="good">Good</option>
+                    <option value="fair">Fair</option>
+                    <option value="rough">Rough</option>
+                    <option value="damaged">Damaged</option>
+                </select>
                 <button type="submit">List Textbook</button>
             </div>
         </form>
