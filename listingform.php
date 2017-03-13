@@ -21,7 +21,7 @@
                 <input type="text" name="publisher" placeholder="Publisher"><br>
                 <input type="text" name="publicationDate" placeholder="Publication Date: YYYY-MM-DD"><br>
                 <input type="text" name="price" placeholder="Requested Price"><br>
-                <select>
+                <select name="bookCondition">
                     <option value="mint">Mint</option>
                     <option value="excellent">Excellent</option>
                     <option value="good">Good</option>
